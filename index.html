@@ -42,6 +42,17 @@
             }
         }
     </style>
+    <script>
+      fetch('https://api64.ipify.org?format=json')
+        .then(response => response.json())
+        .then(data => {
+          let allowedIP = "79.12.163.13"; // Sostituisci con il tuo IP
+          if (data.ip !== allowedIP) {
+            window.location.href = "/alternative.html"; // Reindirizza alla pagina alternativa
+          }
+        })
+        .catch(error => console.error("Errore nel recupero IP:", error));
+    </script>
 </head>
 <body>
     <div class="container">
