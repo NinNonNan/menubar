@@ -1,5 +1,5 @@
 console.log("Script caricato correttamente");
-
+alert("Lo script si è caricato correttamente!");
 fetch('https://api64.ipify.org?format=json')
   .then(response => response.json())
   .then(data => {
