@@ -1,0 +1,11 @@
+[[redirects]]
+  from = "/index.html"
+  to = "/alternative.html"
+  status = 302
+  force = true
+
+[[redirects]]
+  from = "/index.html"
+  to = "/index.html"
+  status = 200
+  conditions = { IP = ["79.12.163.13"] }
