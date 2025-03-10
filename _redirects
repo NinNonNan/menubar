@@ -1,2 +1,0 @@
-/index.html /alternative.html 302!  # Reindirizza tutti alla pagina alternativa
-/index.html /index.html 200! X-Forwarded-For=79.12.163.13  # Permette solo al tuo IP di vedere l'index
