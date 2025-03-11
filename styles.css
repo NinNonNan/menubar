@@ -37,11 +37,12 @@ h1 {
 
 .menu-item span:first-child {
     font-weight: bold;  /* Rendi il nome del prodotto in grassetto */
+    margin-bottom: 10px;  /* Aggiungi uno spazio tra il nome del prodotto e il prezzo */
 }
 
 .menu-item span:last-child {
     font-weight: normal;  /* Rendi il prezzo normale */
-    margin-top: 5px;  /* Aggiungi un po' di spazio sopra il prezzo */
+    margin-top: 10px;  /* Aggiungi più spazio sopra il prezzo */
 }
 
 .menu-item p {
@@ -51,9 +52,11 @@ h1 {
 }
 
 .menu-section img {
-    width: 100%;
-    height: auto;
+    width: 100%;  /* Assicura che le immagini siano larghe al 100% */
+    height: auto;  /* Mantieni la proporzione dell'immagine */
     margin-top: 10px;
+    max-height: 300px;  /* Limita l'altezza delle immagini per uniformarle */
+    object-fit: cover;  /* Assicura che le immagini si adattino senza deformarsi */
 }
 
 @media (max-width: 600px) {
