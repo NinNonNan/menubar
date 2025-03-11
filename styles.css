@@ -61,11 +61,13 @@ h1 {
 }
 
 .section-icon {
-    width: 30px;  /* Impostiamo una larghezza fissa per le icone */
-    height: 30px; /* Impostiamo anche l'altezza, assicurandoci che sia proporzionata */
+    max-width: 30px;  /* Impostiamo la larghezza massima */
+    max-height: 30px; /* Impostiamo l'altezza massima */
+    width: 100%;      /* Impostiamo la larghezza per adattarsi al contenitore */
+    height: auto;     /* Mantiene la proporzione originale */
     margin-right: 10px; /* Spazio tra l'icona e il titolo */
-    vertical-align: middle; /* Centra verticalmente l'icona con il testo */
-    object-fit: contain;  /* Assicura che l'icona mantenga le proporzioni */
+    vertical-align: middle; /* Allinea verticalmente l'icona */
+    object-fit: contain; /* Mantiene la proporzione dell'immagine */
 }
 
 @media (max-width: 600px) {
