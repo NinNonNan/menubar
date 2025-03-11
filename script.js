@@ -3,7 +3,7 @@ console.log("Script caricato correttamente");
 fetch('https://api64.ipify.org?format=json')
   .then(response => response.json())
   .then(data => {
-    let allowedIP = "79.12.163.13"; // Sostituisci con il tuo IP
+    let allowedIP = "2.226.196.52"; // Sostituisci con il tuo IP
     console.log("IP rilevato:", data.ip); // Log dell'IP rilevato
 
     if (data.ip === allowedIP) {
