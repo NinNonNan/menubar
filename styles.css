@@ -65,7 +65,7 @@ h1 {
     max-height: 30px; /* Impostiamo l'altezza massima */
     width: 100%;      /* Impostiamo la larghezza per adattarsi al contenitore */
     height: auto;     /* Mantiene la proporzione originale */
-    margin-right: 10px; /* Spazio tra l'icona e il titolo */
+    margin: 5px; /* Spazio tra l'icona e il titolo */
     vertical-align: middle; /* Allinea verticalmente l'icona */
     object-fit: contain; /* Mantiene la proporzione dell'immagine */
 }
