@@ -25,10 +25,11 @@ h1 {
 
 .menu-item {
     display: flex;
-    flex-direction: column;  /* Cambia la disposizione in colonna */
+    justify-content: space-between; /* Per allineare il nome del prodotto e il prezzo */
     padding: 10px;
     border-bottom: 1px solid #ddd;
-    text-align: left;  /* Aggiungi l'allineamento a sinistra */
+    text-align: left;
+    flex-wrap: wrap; /* Permette di andare a capo quando lo schermo è troppo stretto */
 }
 
 .menu-item:last-child {
@@ -37,12 +38,14 @@ h1 {
 
 .menu-item span:first-child {
     font-weight: bold;  /* Rendi il nome del prodotto in grassetto */
-    margin-bottom: 10px;  /* Aggiungi uno spazio tra il nome del prodotto e il prezzo */
+    flex-basis: 70%; /* Imposta il nome del prodotto per occupare la maggior parte dello spazio */
 }
 
 .menu-item span:last-child {
     font-weight: normal;  /* Rendi il prezzo normale */
-    margin-top: 10px;  /* Aggiungi più spazio sopra il prezzo */
+    margin-top: 5px;  /* Aggiungi uno spazio sopra il prezzo */
+    text-align: right;  /* Allinea il prezzo a destra */
+    flex-basis: 30%; /* Imposta il prezzo per occupare il 30% dello spazio */
 }
 
 .menu-item p {
@@ -52,15 +55,17 @@ h1 {
 }
 
 .menu-section img {
-    width: 100%;  /* Assicura che le immagini siano larghe al 100% */
-    height: auto;  /* Mantieni la proporzione dell'immagine */
+    width: 100%;
+    height: auto;
     margin-top: 10px;
-    max-height: 300px;  /* Limita l'altezza delle immagini per uniformarle */
-    object-fit: cover;  /* Assicura che le immagini si adattino senza deformarsi */
 }
 
 @media (max-width: 600px) {
     .menu-item {
+        flex-direction: column;
         text-align: left;
+    }
+    .menu-item span:last-child {
+        margin-top: 10px; /* Spazio maggiore tra prezzo e nome prodotto su schermi piccoli */
     }
 }
