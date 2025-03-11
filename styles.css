@@ -60,6 +60,13 @@ h1 {
     margin-top: 10px;
 }
 
+.section-icon {
+    width: 24px; /* Imposta una larghezza adatta per l'icona */
+    height: auto; /* Mantieni la proporzione dell'icona */
+    margin-right: 10px; /* Aggiungi un po' di spazio tra l'icona e il testo del titolo */
+    vertical-align: middle; /* Allinea l'icona al centro rispetto al testo */
+}
+
 @media (max-width: 600px) {
     .menu-item {
         flex-direction: column;
