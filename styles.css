@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 20px auto;
     background: white;
     padding: 20px;
@@ -23,38 +23,41 @@ h1 {
     margin-top: 20px;
 }
 
-.section-image {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
 .menu-item {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column;  /* Cambia la disposizione in colonna */
     padding: 10px;
     border-bottom: 1px solid #ddd;
-}
-
-.menu-item span {
-    font-weight: bold;
-    color: #555;
-}
-
-.menu-item p {
-    font-size: 0.9em;
-    color: #777;
+    text-align: left;  /* Aggiungi l'allineamento a sinistra */
 }
 
 .menu-item:last-child {
     border-bottom: none;
 }
 
-@media (min-width: 601px) {
+.menu-item span:first-child {
+    font-weight: bold;  /* Rendi il nome del prodotto in grassetto */
+}
+
+.menu-item span:last-child {
+    font-weight: normal;  /* Rendi il prezzo normale */
+    margin-top: 5px;  /* Aggiungi un po' di spazio sopra il prezzo */
+}
+
+.menu-item p {
+    margin-top: 5px;  /* Aggiungi uno spazio tra il prezzo e gli ingredienti */
+    font-size: 0.9em;
+    color: #555;
+}
+
+.menu-section img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+@media (max-width: 600px) {
     .menu-item {
-        flex-direction: row;
-        justify-content: space-between;
+        text-align: left;
     }
 }
