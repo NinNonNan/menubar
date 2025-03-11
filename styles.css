@@ -54,6 +54,13 @@ h1 {
     color: #555;
 }
 
+.menu-item p {
+    margin-top: 5px;  /* Aggiungi uno spazio tra il prezzo e gli ingredienti */
+    font-size: 0.9em;
+    color: #555;
+    padding-left: 10px; /* Rientro degli ingredienti */
+}
+
 .menu-section img {
     width: 100%;
     height: auto;
