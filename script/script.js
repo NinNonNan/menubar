@@ -11,7 +11,7 @@ fetch('https://api64.ipify.org?format=json')
         document.getElementById("page-content").style.display = "block";
     } else {
         // Se l'IP non è corretto, reindirizza
-        window.location.href = "/index2.html"; // Reindirizza alla pagina alternativa
+        window.location.href = "/normal.html"; // Reindirizza alla pagina alternativa
     }
   })
   .catch(error => console.error("Errore nel recupero IP:", error));
