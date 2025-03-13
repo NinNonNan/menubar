@@ -25,69 +25,60 @@ h1 {
 
 .menu-item {
     display: flex;
-    justify-content: space-between; /* Allinea il nome del prodotto e il prezzo */
+    justify-content: space-between; /* Allinea il nome e il prezzo */
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    flex-wrap: wrap; /* Permette al contenuto di andare a capo su schermi stretti */
 }
 
 .menu-item:last-child {
     border-bottom: none;
 }
 
-.menu-item .item-name {
-    font-weight: bold;  /* Rende il nome del prodotto in grassetto */
-    flex-basis: 70%; /* Il nome occupa il 70% dello spazio */
+.item-name {
+    font-weight: bold;
+    flex-basis: 70%; /* Imposta la larghezza del nome del prodotto */
 }
 
-.menu-item .item-price {
-    font-weight: normal;  /* Il prezzo ha uno stile normale */
-    margin-top: 5px;  /* Aggiunge uno spazio sopra il prezzo */
-    text-align: right;  /* Allinea il prezzo a destra */
-    flex-basis: 30%; /* Il prezzo occupa il 30% dello spazio */
-}
-
-.menu-item .item-price[aria-label] {
-    border-radius: 5px;  /* Bordo arrotondato per l'etichetta del prezzo */
-    background-color: #f1f1f1;  /* Sfondo grigio chiaro per evidenziare il prezzo */
-    padding: 5px; /* Spaziatura interna per il prezzo */
-    font-size: 1.1em; /* Aumenta leggermente la dimensione del testo per il prezzo */
+.item-price {
+    font-weight: normal;
+    margin-top: 5px;
+    text-align: right; /* Allinea il prezzo a destra */
+    flex-basis: 30%; /* Imposta la larghezza del prezzo */
 }
 
 .menu-item p {
-    margin-top: 5px;  /* Aggiunge uno spazio tra il prezzo e gli ingredienti */
+    margin-top: 5px;
     font-size: 0.9em;
     color: #555;
-    padding-left: 10px; /* Rientro degli ingredienti */
-}
-
-.menu-section img:not(.section-icon) {
-    width: 100%;
-    height: auto;
-    margin-top: 10px;
-    aspect-ratio: 4 / 3;  /* Imposta un rapporto di aspetto fisso (es. 4:3) */
-    object-fit: cover;  /* Ritaglia l'immagine per riempire l'area senza deformarla */
-    border-radius: 6px; /* Angoli arrotondati per le immagini */
+    padding-left: 10px;
 }
 
 .section-icon {
-    max-width: 30px;  /* Imposta la larghezza massima */
-    max-height: 30px; /* Imposta l'altezza massima */
-    width: auto;      /* Mantiene la larghezza originale */
-    height: auto;     /* Mantiene l'altezza originale */
-    margin: 10px; /* Spazio tra l'icona e il titolo */
-    vertical-align: middle; /* Allinea verticalmente l'icona */
-    object-fit: contain; /* Mantiene la proporzione senza tagliare */
-    aspect-ratio: 1 / 1;  /* Imposta un rapporto di aspetto fisso (es. 1:1) */
+    max-width: 30px;
+    max-height: 30px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    vertical-align: middle;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
+}
+
+.section-image {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 6px;
 }
 
 @media (max-width: 600px) {
     .menu-item {
-        flex-direction: column;
-        text-align: left;
+        flex-direction: column; /* Su schermi piccoli, i contenuti vanno a capo */
     }
-    .menu-item .item-price {
-        margin-top: 10px; /* Maggiore spazio tra il prezzo e il nome del prodotto su schermi piccoli */
+    .item-price {
+        margin-top: 10px; /* Spazio maggiore sopra il prezzo */
     }
 }
