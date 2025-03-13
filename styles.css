@@ -44,8 +44,8 @@ h1 {
 .item-price {
     font-weight: normal;
     margin-top: 5px;
-    text-align: right; /* Allinea il prezzo a destra */
     flex-basis: 30%; /* Imposta la larghezza del prezzo */
+    padding-left: 10px; /* Aggiunge il rientro simile agli ingredienti */
 }
 
 .menu-item p {
@@ -90,4 +90,13 @@ h1 {
     
     .item-price {
         margin-top: 5px; /* Spazio maggiore sopra il prezzo */
-        t
+        text-align: left; /* Allinea il prezzo a sinistra */
+        flex-basis: 100%; /* Fa sì che il prezzo occupi tutta la larghezza */
+        padding-left: 10px; /* Aggiunge lo stesso rientro degli ingredienti */
+    }
+    
+    .menu-item p {
+        text-align: left; /* Allinea il testo degli ingredienti a sinistra */
+        padding-left: 10px; /* Rientro anche sugli ingredienti */
+    }
+}
