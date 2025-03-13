@@ -78,6 +78,7 @@ h1 {
     margin: 10px; /* Spazio tra l'icona e il titolo */
     vertical-align: middle; /* Allinea verticalmente l'icona */
     object-fit: contain; /* Mantiene la proporzione senza tagliare */
+    aspect-ratio: 1 / 1;  /* Imposta un rapporto di aspetto fisso (es. 1:1) */
 }
 
 @media (max-width: 600px) {
