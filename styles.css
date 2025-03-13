@@ -25,37 +25,38 @@ h1 {
 
 .menu-item {
     display: flex;
-    justify-content: space-between; /* Per allineare il nome del prodotto e il prezzo */
+    justify-content: space-between; /* Allinea il nome del prodotto e il prezzo */
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
-    flex-wrap: wrap; /* Permette di andare a capo quando lo schermo è troppo stretto */
+    flex-wrap: wrap; /* Permette al contenuto di andare a capo su schermi stretti */
 }
 
 .menu-item:last-child {
     border-bottom: none;
 }
 
-.menu-item span:first-child {
-    font-weight: bold;  /* Rendi il nome del prodotto in grassetto */
-    flex-basis: 70%; /* Imposta il nome del prodotto per occupare la maggior parte dello spazio */
+.menu-item .item-name {
+    font-weight: bold;  /* Rende il nome del prodotto in grassetto */
+    flex-basis: 70%; /* Il nome occupa il 70% dello spazio */
 }
 
-.menu-item span:last-child {
-    font-weight: normal;  /* Rendi il prezzo normale */
-    margin-top: 5px;  /* Aggiungi uno spazio sopra il prezzo */
+.menu-item .item-price {
+    font-weight: normal;  /* Il prezzo ha uno stile normale */
+    margin-top: 5px;  /* Aggiunge uno spazio sopra il prezzo */
     text-align: right;  /* Allinea il prezzo a destra */
-    flex-basis: 30%; /* Imposta il prezzo per occupare il 30% dello spazio */
+    flex-basis: 30%; /* Il prezzo occupa il 30% dello spazio */
+}
+
+.menu-item .item-price[aria-label] {
+    border-radius: 5px;  /* Bordo arrotondato per l'etichetta del prezzo */
+    background-color: #f1f1f1;  /* Sfondo grigio chiaro per evidenziare il prezzo */
+    padding: 5px; /* Spaziatura interna per il prezzo */
+    font-size: 1.1em; /* Aumenta leggermente la dimensione del testo per il prezzo */
 }
 
 .menu-item p {
-    margin-top: 5px;  /* Aggiungi uno spazio tra il prezzo e gli ingredienti */
-    font-size: 0.9em;
-    color: #555;
-}
-
-.menu-item p {
-    margin-top: 5px;  /* Aggiungi uno spazio tra il prezzo e gli ingredienti */
+    margin-top: 5px;  /* Aggiunge uno spazio tra il prezzo e gli ingredienti */
     font-size: 0.9em;
     color: #555;
     padding-left: 10px; /* Rientro degli ingredienti */
@@ -67,7 +68,7 @@ h1 {
     margin-top: 10px;
     aspect-ratio: 4 / 3;  /* Imposta un rapporto di aspetto fisso (es. 4:3) */
     object-fit: cover;  /* Ritaglia l'immagine per riempire l'area senza deformarla */
-    border-radius: 6px; /* Opzionale: angoli arrotondati */
+    border-radius: 6px; /* Angoli arrotondati per le immagini */
 }
 
 .section-icon {
@@ -86,7 +87,7 @@ h1 {
         flex-direction: column;
         text-align: left;
     }
-    .menu-item span:last-child {
-        margin-top: 10px; /* Spazio maggiore tra prezzo e nome prodotto su schermi piccoli */
+    .menu-item .item-price {
+        margin-top: 10px; /* Maggiore spazio tra il prezzo e il nome del prodotto su schermi piccoli */
     }
 }
