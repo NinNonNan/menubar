@@ -79,23 +79,22 @@ h1 {
 @media (max-width: 600px) {
     .menu-item {
         flex-direction: column; /* Su schermi piccoli, i contenuti vanno a capo */
-        align-items: center; /* Allinea gli elementi verticalmente */
-        text-align: center; /* Centra il testo per tutti gli elementi */
+        text-align: left; /* Allinea tutto a sinistra */
     }
     
     .item-name {
-        text-align: center; /* Allinea il nome del prodotto al centro */
+        text-align: left; /* Allinea il nome del prodotto a sinistra */
         flex-basis: 100%; /* Occupano tutta la larghezza per schermi piccoli */
         margin-bottom: 5px; /* Spazio sotto il nome del prodotto */
     }
     
     .item-price {
         margin-top: 5px; /* Spazio maggiore sopra il prezzo */
-        text-align: center; /* Allinea il prezzo al centro */
+        text-align: left; /* Allinea il prezzo a sinistra */
         flex-basis: 100%; /* Fa sì che il prezzo occupi tutta la larghezza */
     }
     
     .menu-item p {
-        text-align: center; /* Centra anche il testo degli ingredienti */
+        text-align: left; /* Allinea il testo degli ingredienti a sinistra */
     }
 }
