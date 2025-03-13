@@ -61,7 +61,7 @@ h1 {
     padding-left: 10px; /* Rientro degli ingredienti */
 }
 
-.menu-section img {
+.menu-section img:not(.section-icon) {
     width: 100%;
     height: auto;
     margin-top: 10px;
