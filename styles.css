@@ -77,7 +77,7 @@ h1 {
     height: auto;     /* Mantiene la proporzione originale */
     margin: 10px; /* Spazio tra l'icona e il titolo */
     vertical-align: middle; /* Allinea verticalmente l'icona */
-    object-fit: contain; /* Mantiene la proporzione dell'immagine */
+    /* object-fit: contain; /* Mantiene la proporzione dell'immagine */
 }
 
 @media (max-width: 600px) {
