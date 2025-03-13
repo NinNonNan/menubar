@@ -29,6 +29,7 @@ h1 {
     padding: 10px;
     border-bottom: 1px solid #ddd;
     text-align: left;
+    flex-wrap: wrap; /* Permette agli ingredienti di andare a capo */
 }
 
 .menu-item:last-child {
@@ -52,6 +53,7 @@ h1 {
     font-size: 0.9em;
     color: #555;
     padding-left: 10px;
+    width: 100%; /* Forza gli ingredienti a occupare tutta la larghezza */
 }
 
 .section-icon {
