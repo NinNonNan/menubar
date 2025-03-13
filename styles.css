@@ -30,7 +30,6 @@ h1 {
     border-bottom: 1px solid #ddd;
     text-align: left;
     flex-wrap: wrap; /* Permette di andare a capo quando lo schermo è troppo stretto */
-    border-radius: 6px; /* Opzionale: angoli arrotondati */
 }
 
 .menu-item:last-child {
@@ -68,6 +67,7 @@ h1 {
     margin-top: 10px;
     aspect-ratio: 4 / 3;  /* Imposta un rapporto di aspetto fisso (es. 4:3) */
     object-fit: cover;  /* Ritaglia l'immagine per riempire l'area senza deformarla */
+    border-radius: 6px; /* Opzionale: angoli arrotondati */
 }
 
 .section-icon {
