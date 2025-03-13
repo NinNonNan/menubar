@@ -30,6 +30,7 @@ h1 {
     border-bottom: 1px solid #ddd;
     text-align: left;
     flex-wrap: wrap; /* Permette di andare a capo quando lo schermo è troppo stretto */
+    border-radius: 6px; /* Opzionale: angoli arrotondati */
 }
 
 .menu-item:last-child {
