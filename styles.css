@@ -90,11 +90,4 @@ h1 {
     
     .item-price {
         margin-top: 5px; /* Spazio maggiore sopra il prezzo */
-        text-align: left; /* Allinea il prezzo a sinistra */
-        flex-basis: 100%; /* Fa sì che il prezzo occupi tutta la larghezza */
-    }
-    
-    .menu-item p {
-        text-align: left; /* Allinea il testo degli ingredienti a sinistra */
-    }
-}
+        t
