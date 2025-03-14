@@ -36,12 +36,12 @@
             padding: 20px;
             text-align: center;
         }
-        .rooms, .services, .contact {
+        .rooms, .services, .contact, .menu-box {
             display: flex;
             justify-content: space-around;
             margin-top: 20px;
         }
-        .room, .service {
+        .room, .service, .menu-box {
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -66,6 +66,11 @@
             border-radius: 5px;
             font-size: 16px;
         }
+        .menu-box a {
+            color: #4CAF50;
+            font-weight: bold;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
@@ -76,6 +81,7 @@
                 <li><a href="#about">Chi Siamo</a></li>
                 <li><a href="#rooms">Le Camere</a></li>
                 <li><a href="#services">Servizi</a></li>
+                <li><a href="#menu">Menu Locale Convenzionato</a></li>
                 <li><a href="#contact">Contatti</a></li>
             </ul>
         </nav>
@@ -91,21 +97,33 @@
             <h2>Le Nostre Camere</h2>
             <div class="rooms">
                 <div class="room">
-                    <h3>Camera Matrimoniale</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Camera Matrimoniale">
-                    <p>Perfetta per coppie che cercano comfort e intimità. Arredata con gusto, questa stanza offre un letto matrimoniale e una vista panoramica.</p>
+                    <h3>Camera 1</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera 1">
+                    <p>Camera matrimoniale con vista giardino, arredamento elegante e tutti i comfort per un soggiorno rilassante.</p>
                     <a href="#" class="btn-book">Prenota ora</a>
                 </div>
                 <div class="room">
-                    <h3>Camera Familiare</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Camera Familiare">
-                    <p>Ideale per famiglie o gruppi. Spaziosa e luminosa, con letti separati e un'area giochi per i bambini.</p>
+                    <h3>Camera 2</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera 2">
+                    <p>Camera doppia con letti separati, ideale per amici o colleghi in viaggio. Comoda e funzionale.</p>
                     <a href="#" class="btn-book">Prenota ora</a>
                 </div>
                 <div class="room">
-                    <h3>Suite Deluxe</h3>
-                    <img src="https://via.placeholder.com/300x200" alt="Suite Deluxe">
-                    <p>Una camera di lusso con tutti i comfort. Include una vasca idromassaggio, una vista incredibile e un balcone privato.</p>
+                    <h3>Camera 3</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera 3">
+                    <p>Camera matrimoniale spaziosa con balcone privato e una splendida vista sul lago. Perfetta per una fuga romantica.</p>
+                    <a href="#" class="btn-book">Prenota ora</a>
+                </div>
+                <div class="room">
+                    <h3>Camera 4 - Tripla</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera 4 - Tripla">
+                    <p>Camera tripla ideale per famiglie o gruppi di amici. Ampia e luminosa, con letti separati e area comune.</p>
+                    <a href="#" class="btn-book">Prenota ora</a>
+                </div>
+                <div class="room">
+                    <h3>Camera 5</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera 5">
+                    <p>Suite elegante con zona soggiorno, ideale per chi cerca un po' di lusso e comfort extra durante il soggiorno.</p>
                     <a href="#" class="btn-book">Prenota ora</a>
                 </div>
             </div>
@@ -126,6 +144,13 @@
                     <h3>Piscina e Giardino</h3>
                     <p>Rilassatevi nel nostro giardino e approfittate della piscina per un soggiorno ancora più rilassante.</p>
                 </div>
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2>Menu del Locale Convenzionato</h2>
+            <div class="menu-box">
+                <p>Per il pranzo o la cena, vi consigliamo di visitare il nostro locale convenzionato. Clicca qui per visualizzare il <a href="https://www.examplemenu.com" target="_blank">menu completo</a>.</p>
             </div>
         </section>
 
