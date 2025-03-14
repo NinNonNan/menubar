@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Benvenuti nel nostro accogliente Bed & Breakfast Politeama Crystal Room. Scopri le camere, i servizi e prenota subito!">
+    <title>Politeama Crystal Room - Bed & Breakfast</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .main-content {
+            padding: 20px;
+            text-align: center;
+        }
+        .rooms, .services, .contact {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .room, .service {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .btn-book {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Benvenuti a Politeama Crystal Room</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Chi Siamo</a></li>
+                <li><a href="#rooms">Le Camere</a></li>
+                <li><a href="#services">Servizi</a></li>
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <section id="about">
+            <h2>La nostra Storia</h2>
+            <p>Benvenuti a **Politeama Crystal Room**, un accogliente Bed & Breakfast situato nel cuore della splendida campagna. Offriamo camere eleganti, una vista mozzafiato e un servizio attento per garantirvi un soggiorno rilassante e piacevole. Sia che stiate cercando un rifugio per il weekend o una lunga vacanza, qui troverete il luogo ideale per il vostro soggiorno.</p>
+        </section>
+
+        <section id="rooms">
+            <h2>Le Nostre Camere</h2>
+            <div class="rooms">
+                <div class="room">
+                    <h3>Camera Matrimoniale</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera Matrimoniale">
+                    <p>Perfetta per coppie che cercano comfort e intimità. Arredata con gusto, questa stanza offre un letto matrimoniale e una vista panoramica.</p>
+                    <a href="#" class="btn-book">Prenota ora</a>
+                </div>
+                <div class="room">
+                    <h3>Camera Familiare</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Camera Familiare">
+                    <p>Ideale per famiglie o gruppi. Spaziosa e luminosa, con letti separati e un'area giochi per i bambini.</p>
+                    <a href="#" class="btn-book">Prenota ora</a>
+                </div>
+                <div class="room">
+                    <h3>Suite Deluxe</h3>
+                    <img src="https://via.placeholder.com/300x200" alt="Suite Deluxe">
+                    <p>Una camera di lusso con tutti i comfort. Include una vasca idromassaggio, una vista incredibile e un balcone privato.</p>
+                    <a href="#" class="btn-book">Prenota ora</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <h2>I Nostri Servizi</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Colazione Inclusa</h3>
+                    <p>Ogni mattina vi offriamo una deliziosa colazione fatta in casa, con prodotti freschi e locali.</p>
+                </div>
+                <div class="service">
+                    <h3>Wi-Fi Gratuito</h3>
+                    <p>Rimanete connessi durante il vostro soggiorno grazie al nostro Wi-Fi gratuito disponibile in tutta la struttura.</p>
+                </div>
+                <div class="service">
+                    <h3>Piscina e Giardino</h3>
+                    <p>Rilassatevi nel nostro giardino e approfittate della piscina per un soggiorno ancora più rilassante.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contattaci</h2>
+            <p>Per prenotazioni o informazioni, non esitate a contattarci:</p>
+            <p>Email: <strong>info@politeamacrystalroom.com</strong></p>
+            <p>Telefono: <strong>+39 123 456 7890</strong></p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Politeama Crystal Room - Tutti i diritti riservati</p>
+    </footer>
+</body>
+</html>
